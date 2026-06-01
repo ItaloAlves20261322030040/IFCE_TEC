@@ -1,0 +1,96 @@
+/*CSSReset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: boarder-box;
+}
+
+body{
+    font-weight:Roboto;
+    font-size: 16px;
+    line-height:1.6;
+}
+
+h1,h2,h3{
+    font-weight: Merriweather;
+}
+
+header{
+    background-color: #292929;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+header h1{
+    color:rgb(6, 185, 185)
+}
+header .subtitulo {
+    font-size: 16px;       
+    color: #b3b3cc;         
+    font-weight: normal;
+}
+
+nav{
+    background-color: #858383;
+}
+
+nav a {
+    text-decoration: none;     
+    color: #e4e4e4;           
+    padding: 14px 20px;        
+}
+nav a:hover {
+    background-color: #89b0e0; 
+    color: #ffffff;            
+}
+
+.post {
+    border: 1px solid #e0e0e0;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+.post h2 {
+    font-size: 22px;              
+    color: #1a1a2e;              
+    margin-bottom: 12px;          
+}
+.post.destaque {
+    background-color: #e8eef7;    
+    border: 2px solid #162447;    
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+}
+
+.post .data {
+    font-size: 14px;              
+    color: #949292;              
+    font-style: italic;           
+}
+
+.post .leia-mais {
+    display: inline-block;        
+    text-decoration: none;        
+    color: #1a1a2e;               
+    font-weight: bold;    
+}
+
+sobre-mim {
+    background-color: #f8f9fa; 
+    padding: 20px;
+    border-left: 4px solid #e94560; 
+    margin: 30px 0;               
+}
+footer {
+    background-color: #3d3d66;   
+    text-align: center ;          
+    padding: 30px 20px;           
+    border-top: 2px solid #1a2747; 
+}
+footer p{
+    color: #e4e4e4;
+}
+
+main {
+    max-width: 800px;          
+    margin: 40px auto;         
+    padding: 0 20px;           
+}

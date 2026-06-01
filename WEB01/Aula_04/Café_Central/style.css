@@ -1,0 +1,128 @@
+/*Tarefa 1 — CSS Reset e scroll suave*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Tarefa 2 — Variáveis CSS
+Declarando no :root pelo menos as seguintes variáveis antes de qualquer outra regra:*/
+:root{
+    --cor-principal: #8b4513;
+    --cor-destaque: #d2691e;
+    --cor-fundo: #2b211a;
+    --cor-texto: #ffffff;
+    --cor-texto-claro: #cbe9cd;
+    --fonte-titulos:#e8a87c;;
+    --fonte-corpo-texto:#c9c9c9;
+    --valor-espacamento:#1909f1;
+    --valor-borda-padrao:#c6ee17; 
+}
+
+/*Tarefa 3 — Container
+Criando a classe .container*/
+.container{
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 20px;       
+}
+
+/*Tarefa 4 — Header fixo
+Estilizando o header:*/
+header{
+    /* Fixa o elemento no topo da janela */
+    position: fixed;
+    /* Ocupa toda a largura da tela */
+    width: 100%;
+    /*Tenha cor de fundo escura usando sua variável*/
+    background-color: var(--cor-fundo);
+    /*Tenha z-index alto o suficiente para ficar na frente de tudo*/
+    z-index: 1000;
+    border-bottom: 2px solid var(--cor-texto);
+    padding: px 0; /* Adiciona respiro no topo e embaixo do menu */
+    
+}
+
+/* Deixa o "Café Central" mais visível */
+.logo {
+    color: var(--cor-texto); 
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/*Nesse momento meu header ficou sobrepondo meu texto, então usei o 
+#sobre fando uso do sletor de id para tentar contornar esse probelma.*/
+#sobre {
+    padding-top: 80px;
+}
+
+/*Tarefa 5 — Navegação com inline-block
+Estilizando os links <a> dentro da nav*/
+header nav{
+    /* Ficam lado a lado */
+    display: inline-block;
+    /* Padding confortável */
+    padding: 10px 15px;
+    /* Remove o sublinhado */
+    text-decoration: none;
+    /* Cor clara */
+    color: var(--cor-texto-claro);
+}
+/* Mudam de aparência no :hover */
+header nav a:hover {
+    color: var(--cor-titulos); /* Muda para a cor dos títulos no hover */
+    border-bottom: 2px solid var(--cor-titulos); /* Adiciona uma linha elegante abaixo */
+}
+
+/* Tarefa 6 — Hero
+Estiliza a seção hero */
+.hero {
+    /* Espaçamento superior para compensar o header fixo */
+    /* Ajuste este valor conforme a altura real do seu header */
+    padding-top: 100px;
+    
+    /* Cor de fundo escura usando a variável */
+    background-color: var(--cor-principal);
+    
+    /* Garante que o texto tenha contraste com o fundo escuro */
+    color: var(--cor-texto);
+  }
+  /*Tarefa 7 — Badge de desconto com position absolute*/
+  .badge-desconto {
+    position: absolute;
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto);
+    border-radius: 5px;
+  }
+  /* Tarefa 8 — Badges de destaque nos itens do cardápio */
+  .item-imagem-container {
+    position: relative;
+  }
+  
+  .badge-destaque {
+    position: absolute;
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto);
+    border-radius: 5px;
+  }
+  /*Tarefa 9 — Categorias com inline-block*/
+  .categoria {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: var(--fonte-corpo-texto);
+    margin: 5px;
+  }
+  /*Tarefa 10 — Botão voltar ao topo com position fixed*/
+  .voltar-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    z-index: 500;
+  }
+  
+  .voltar-topo:hover {
+    background-color: var(--cor-destaque);
+  }
